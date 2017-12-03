@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
-import {HEROES} from '../mock-heroes'; 
+import {HEROES} from '../moc[-k-heroes'; 
+
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -13,9 +14,7 @@ heroes = HEROES;
 
 selectedHero: Hero;
  
-	onSelect(hero: Hero): void{
-		this.selectedHero = hero;
-	}
+	
 
   constructor() { }
 
@@ -24,5 +23,7 @@ selectedHero: Hero;
   
 
   }
-
+onSelect(hero: Hero): void{
+		this.selectedHero = hero;
+	}
 }
